@@ -1,0 +1,6 @@
+{
+  "db": {
+    "dns": "abc",
+    "conn_limit": 10
+  }
+}

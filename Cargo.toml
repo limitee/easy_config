@@ -1,0 +1,10 @@
+[package]
+name = "easy_config"
+version = "0.0.1"
+authors = ["liming <liming@admaster.com.cn>"]
+
+[dependencies]
+rustc-serialize = "0.3.16"
+easy_util = {version="0.0.1", path="../easy_util"}
+lazy_static = "0.1.15"
+
