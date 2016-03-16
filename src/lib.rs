@@ -13,6 +13,9 @@ use std::io;
 use std::io::prelude::*;
 use std::fs::File;
 
+#[macro_use]
+extern crate log;
+
 pub struct Config {
     path: String,
     data: Json,
@@ -42,7 +45,7 @@ impl Config {
         }
         // iterate over everything.
         for (key, value) in &map {
-            println!("{}: \"{}\"", key, value);
+            info!("{}: \"{}\"", key, value);
         }
 
         let target = map.get("target").unwrap();
