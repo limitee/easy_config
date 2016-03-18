@@ -52,7 +52,7 @@ impl Config {
         let path = format!("./{}/config.json", target);
         let data = read_file(&path).unwrap();
         Config {
-            path: String::from("abc"),
+            path: path.clone(),
             data: data,
         }
     }
